@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+
+body{
+    display: flex;
+    height: 1000px;
+    align-items: center;
+    width: 1920px;
+    background: url(../img/tela.gif);
+    flex-direction: column;
+    background-size: 1920px 1000px ;
+    background-repeat: no-repeat;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    align-items: center;
+
+}
+
+
+.title{
+    font-size: 50px;
+    cursor: default;
+}
+
+.pergunta{
+    margin-left: 4%;
+    margin-right: 4%;
+    border: 2px solid white;
+    max-width: 1000px;
+    width: 850px;
+    height: 500px;
+    font-size: 17px;
+    border-radius: 15px;
+  
+
+    
+}
+.next{
+    position: fixed;
+    height: 70px;
+    width: 150px;
+    opacity: 50%;
+    top: 8px;
+    right: 10px;
+  
+
+}
+
+.contador{
+    font-size: 80px;
+    position:fixed;
+    height: 70px;
+    width: 150px;
+    top: 5px;
+    left: 8px;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+    
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-left: 5px;
+    font-size: 15px;
+    
+
+}
+
+span{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 2px;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    border: 1px solid white;
+    padding: 2px;
+}
+
+p{
+    margin: 10px;
+    font-size: 20px;
+}
+ 
+.opt{
+    font-size: 16px;
+}
+
+@keyframes certo {
+
+    from{
+        box-shadow: 0px 0px 12px 12px green;
+    }
+    
+}
+
+
+@keyframes errado {
+
+    from{
+        box-shadow: 0px 0px 12px 12px rgb(128, 0, 0);
+    }
+    
+}
+
+
+
+.pause{
+    height: 80px;
+    width: 100px;
+    position: fixed;
+    background: none;
+    cursor: pointer;
+    margin-top: 5px;
+    right: 20px;
+    bottom: 5px;
+ 
+}
+
+
+
+
+
+#btp{
+    display: block;
+}
+
+
+.menu{
+    position:absolute;
+    display: none;
+
+    background: url(../img/bannerp.gif) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+
+ .resume{
+    filter:  invert();
+    height: 100px;
+    width: 150px;
+    padding: 10px;
+    top: 50vh;
+    left: 50vw;
+    border: 3px solid black;
+    border-radius: 100%;
+    cursor: pointer;
+
+
+ }
+
+ .container01{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1080px;
+    width: 1920px;
+
+
+ }
+
+
+ .pause_title{
+    font-size: 90px;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 40px;
+    animation: floated infinite alternate 3s;
+    cursor: default;
+    
+ }
+
+ 
+@keyframes floated {
+    0%{
+        transform: translate(0,10px);
+    }
+
+    100%{
+        transform: translate(0,-10px);
+    }
+    
+}
+.resume:hover{
+    
+    box-shadow: 0px 0px 90px 15px  black;
+    transition: 1.5s ease-in-out;
+    transform: scale(1.5);
+
+
+}
+
+.pause:hover{
+    
+    
+    transition: 1.5s ease-in-out;
+    transform: scale(1.5);
+
+
+}
+
+.qq1,.qq2{
+    filter: invert();
+   
+}
+.pergunta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.qq1{
+    height: 50%;
+}
+
+
+
+.aq2{
+    height: 30%;
+   margin-top: 200px;
+    
+}
+
+
+.img,.img2{
+    display: block;
+}

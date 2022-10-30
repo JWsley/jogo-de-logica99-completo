@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tel11.css">
+    <title>Phase1</title>
+</head>
+<body>
+     <div class="cont" id="timer">
+    	<h2 class="contador" id="contador"></h2> </div>
+        <div class="next">
+            <a href="../tela12/tel12.html"><img  id="next"  disabled="disabled" class="next" src="../img/next.png" alt="seta"></a>
+        </div>
+
+        <div class="menu" id="menu">
+            <div class="container01">
+                <h1 class="pause_title">GAME PAUSED</h1>
+                <img class="resume" id="voltar" onclick="resume()" src="../img/resume.png" alt="">
+                
+            </div>
+    </div>
+    
+     <img class="pause" id="btp" onclick="breaky()" src="../img/pause.png" alt=""> 
+       <div class="container">
+           
+
+
+
+   <div class="container">
+       
+       <div class="title">O que é que é</div>
+
+                <div class="pergunta">
+                        <p>
+                            O que é que TODOS tem 2, VOCÊ tem 1 e EU não tenho nenhum?
+                         </p>
+                    </div>
+       
+                </div>
+       <div class="options">
+           <div class="option" id="o1" onclick="errado1('select')"><span class="opa">A</span><p class="opt">Enjoo. </p> </div>
+           <div class="option" id="o2" onclick="errado2('select')"> <span class="opb">B</span><p class="opt">Numero 0.</p> </div>
+           <div class="option" id="o3" onclick="errado3('select')"> <span class="opc">C</span><p class="opt">Olho.</p> </div>
+           <div class="option" id="o4" onclick="correto('select')"> <span class="opd">D</span><p class="opt">Letra O.
+        </p> </div>
+       </div>
+       <audio  id="yoshi" src="./yoshi.m4a"></audio>
+       <audio  id="coin" src="./certo.m4a"></audio>
+       <audio id="error"src="./errado.m4a"></audio>
+       <audio  id="fail"src="./fail.m4a"></audio>
+       <script src="./tel11.js"></script>
+</body>
+</html>
